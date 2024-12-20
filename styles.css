@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(./transferir.jpeg);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 1.9rem;
+    color: #1db954;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #a1a1a1;
+}
+
+.form-section {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+}
+
+.form-section h2 {
+    font-size: 1.8rem;
+    color: #1db954;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    background-color: #121212;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+form input:focus, form select:focus {
+    border-color: #1db954;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1db954;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+button#add-reserves {
+    background-color: #1db954;
+}
+
+button#remove-reserve {
+    background-color: #e53935;
+    margin-top: 10px;
+}
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #25D366;
+}
+
+.cards {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.t3 {
+    color: #1db954;
+    margin-bottom: 1%;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    margin-top: 10px;
+    font-style: italic;
+}

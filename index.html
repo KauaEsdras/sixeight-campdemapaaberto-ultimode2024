@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Six Eight Championship - Inscrição</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="header">
+        <h1>Six Eight <br />Interbairro de Games</h1>
+        <p>Apoio: Secretaria do Estado de Industria, Ciência e Tecnologia (SEICT)</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Formulário de Inscrição</h2>
+            <form action="https://api.sheetmonkey.io/form/6f2hX5UqMongYs58pTHC5P" method="post" id="registration-form">
+                <div class="cards">
+                    <h3 class="t3">Informações do Time</h3>
+                    <label for="team-name">Nome do Time:
+                        <input type="text" name="Team Name" required />
+                    </label>
+                </div>
+
+                <div class="cards">
+                    <h3 class="t3">Informações do Capitão</h3>
+                    <label for="captain-name">Nome do Capitão:
+                        <input type="text" name="Captain Name" required />
+                    </label>
+                    <label for="captain-nickname">Apelido do Capitão:
+                        <input type="text" name="Captain Nickname" required />
+                    </label>
+                    <label for="captain-phone">Telefone do Capitão:
+                        <input type="tel" name="Captain Phone" required />
+                    </label>
+                </div>
+
+                <div class="cards">
+                    <h3 class="t3">Informações do Jogador 2</h3>
+                    <label for="player2-name">Jogador 2:
+                        <input type="text" name="Player 2 Name" required />
+                    </label>
+                    <label for="player2-phone">Telefone do Jogador 2:
+                        <input type="tel" name="Player 2 Phone" required />
+                    </label>
+                </div>
+
+                <div class="cards">
+                    <h3 class="t3">Informações do Jogador 3</h3>
+                    <label for="player3-name">Jogador 3:
+                        <input type="text" name="Player 3 Name" required />
+                    </label>
+                    <label for="player3-phone">Telefone do Jogador 3:
+                        <input type="tel" name="Player 3 Phone" required />
+                    </label>
+                </div>
+
+                <div class="cards">
+                    <h3 class="t3">Informações do Jogador 4</h3>
+                    <label for="player4-name">Jogador 4:
+                        <input type="text" name="Player 4 Name" required />
+                    </label>
+                    <label for="player4-phone">Telefone do Jogador 4:
+                        <input type="tel" name="Player 4 Phone" required />
+                    </label>
+                </div>
+
+                <div id="reserve-players"></div>
+                <button type="button" id="add-reserves">Adicionar Reservas</button>
+                <button type="button" id="remove-reserve" style="display: none;">Remover Reserva</button>
+
+                <div>
+                    <h3 class="t3">Selecione a Modalidade:</h3>
+                    <label>
+                        <input type="checkbox" name="modalities" value="4v4" id="4v4" /> 4v4
+                    </label>
+                    <label>
+                        <input type="checkbox" name="modalities" value="Battle Royale" id="battle-royale" /> Battle Royale
+                    </label>
+                    <p class="note">Você pode escolher mais de uma modalidade.</p>
+                </div>
+
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <div>
+                    <input type="submit" value="Inscrever" />
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Six Eight. Todos os direitos reservados.</p>
+    </footer>
+
+    <a id="whatsapp-icon" href="https://wa.me/SEU_NUMERO_DE_TELEFONE" target="_blank"
+        aria-label="Fale com o Suporte"></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
